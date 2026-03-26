@@ -1,0 +1,156 @@
+[project]
+site_name = "fUSI - Community Shared Resources"
+site_url = "https://fusimaging.org"
+site_description = "The Hitchhiker's Guide to fUSI technology"
+site_author = "fUSI Community"
+docs_dir = "docs"
+site_dir = "site"
+repo_url = "https://github.com/sdiebolt/fusimaging"
+repo_name = "fusimaging"
+edit_uri = "edit/main/docs/"
+extra_css = ["stylesheets/extra.css"]
+extra_javascript = [
+    "javascripts/mathjax.js",
+    "https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js",
+]
+nav = [
+    { "Home" = "index.md" },
+    { "Getting Started" = [
+        { "Welcome" = "getting-started/welcome.md" },
+        { "fUSI in 10 Questions" = "getting-started/fusi-in-10-questions.md" },
+        { "Acquisition Systems" = "getting-started/existing-acquisition-systems.md" },
+    ]},
+    { "Experiments" = [
+        { "Animal Preparation" = "experiments/animal-preparation.md" },
+        { "Surgery" = "experiments/surgery.md" },
+    ]},
+    { "Data Processing" = [
+        { "Data Formatting and Standardization" = "data-processing/data-formatting-standardization.md" },
+        { "Acquisition of Power Doppler Signals" = "data-processing/acquisition-power-doppler.md" },
+        { "Data Preprocessing and Denoising" = "data-processing/preprocessing-denoising.md" },
+        { "Anatomical Registration" = "data-processing/anatomical-registration.md" },
+        { "Further Analyses" = [
+            { "Overview" = "data-processing/further-analyses.md" },
+            { "Functional Connectivity" = "data-processing/further-analyses/functional-connectivity.md" },
+            { "Implementation of rs-FC" = "data-processing/further-analyses/implementation-rs-fc.md" },
+        ]},
+    ]},
+    { "Literature" = [
+        { "fUSI Literature" = "literature/fusi-literature.md" },
+        { "PhD Theses" = "literature/phd-theses.md" },
+    ]},
+    { "Software" = [
+        { "Software" = "software/software.md" },
+    ]},
+    { "Community" = [
+        { "fUSIers chart" = "community/fusiers-chart.md" },
+        { "People" = "community/people.md" },
+        { "Labs" = "community/labs.md" },
+    ]},
+]
+
+[[project.extra.social]]
+icon = "fontawesome/brands/github"
+link = "https://github.com/sdiebolt/fusimaging"
+name = "fUSI Community on GitHub"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/discord"
+link = "https://discord.com/channels/1309093618325131274"
+name = "fUSI Community on Discord"
+
+[project.theme]
+variant = "modern"
+language = "en"
+features = [
+    "navigation.tabs",
+    "navigation.sections",
+    "navigation.expand",
+    "navigation.path",
+    "navigation.indexes",
+    "navigation.instant",
+    "navigation.instant.prefetch",
+    "navigation.instant.progress",
+    "navigation.tracking",
+    "toc.follow",
+    "search.highlight",
+    "content.code.copy",
+    "content.code.annotate",
+    "content.action.edit",
+    "content.action.view",
+    "content.tooltips",
+    "content.footnote.tooltips"
+]
+
+[project.theme.icon]
+repo = "fontawesome/brands/github"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+primary = "teal"
+accent = "teal"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to light mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+primary = "teal"
+accent = "teal"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+[project.markdown_extensions.admonition]
+
+[project.markdown_extensions.pymdownx.details]
+
+[project.markdown_extensions.pymdownx.emoji]
+emoji_index = "zensical.extensions.emoji.twemoji" 
+emoji_generator = "zensical.extensions.emoji.to_svg"
+
+[project.markdown_extensions.pymdownx.superfences]
+custom_fences = [
+  { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" }
+]
+
+[project.markdown_extensions.pymdownx.tabbed]
+alternate_style = true
+
+[project.markdown_extensions.pymdownx.highlight]
+anchor_linenums = true
+line_spans = "__span"
+pygments_lang_class = true
+
+[project.markdown_extensions.pymdownx.inlinehilite]
+
+[project.markdown_extensions.abbr]
+[project.markdown_extensions.attr_list]
+[project.markdown_extensions.pymdownx.snippets]
+auto_append = ["docs/includes/abbreviations.md"]
+
+[project.markdown_extensions.pymdownx.keys]
+
+[project.markdown_extensions.pymdownx.caret]
+[project.markdown_extensions.pymdownx.mark]
+[project.markdown_extensions.pymdownx.tilde]
+
+[project.markdown_extensions.toc]
+toc_depth = 3
+permalink = true
+
+[project.markdown_extensions.md_in_html]
+
+[project.markdown_extensions.footnotes]
+
+[project.markdown_extensions.tables]
+
+[project.markdown_extensions.def_list]
+
+[project.markdown_extensions.pymdownx.arithmatex]
+generic = true
+
+[project.markdown_extensions.pymdownx.tasklist]
+custom_checkbox = true
+
+[project.markdown_extensions.pymdownx.blocks.caption]

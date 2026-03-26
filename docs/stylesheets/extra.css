@@ -1,0 +1,53 @@
+/* Better table styling for literature and data tables */
+.literature-table {
+    overflow-x: auto;
+    margin: 1em 0;
+}
+
+.literature-table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9em;
+}
+
+.literature-table th {
+    background-color: var(--md-primary-fg-color);
+    color: var(--md-primary-bg-color);
+    padding: 0.75em;
+    text-align: left;
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.literature-table td {
+    padding: 0.75em;
+    border-bottom: 1px solid var(--md-default-fg-color--lightest);
+    vertical-align: top;
+}
+
+.literature-table tr:hover {
+    background-color: var(--md-accent-fg-color--transparent);
+}
+
+.literature-table a {
+    color: var(--md-accent-fg-color);
+    text-decoration: none;
+}
+
+.literature-table a:hover {
+    text-decoration: underline;
+}
+
+/* Make table responsive on small screens */
+@media screen and (max-width: 768px) {
+    .literature-table {
+        font-size: 0.8em;
+    }
+    
+    .literature-table th,
+    .literature-table td {
+        padding: 0.5em;
+    }
+}

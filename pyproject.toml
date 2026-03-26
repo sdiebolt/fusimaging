@@ -1,0 +1,11 @@
+[project]
+name = "fusimaging"
+version = "0.1.0"
+description = "fUSI community shared resources documentation website."
+requires-python = ">=3.13"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "zensical>=0.0.21",
+]
